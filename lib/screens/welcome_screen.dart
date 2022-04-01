@@ -7,6 +7,9 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("せんたくタグ"),
+      ),
       backgroundColor: Colors.grey.shade400,
       body: SafeArea(
         child: Padding(
@@ -15,10 +18,9 @@ class WelcomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  ElevatedButton(
+              Expanded(
+                child: Center(
+                  child: ElevatedButton(
                     onPressed: () => Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -37,7 +39,7 @@ class WelcomeScreen extends StatelessWidget {
                       elevation: 32.0,
                     ),
                   ),
-                ],
+                ),
               ),
             ],
           ),

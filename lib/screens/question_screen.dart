@@ -6,6 +6,9 @@ class QuestionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("せんたくタグ"),
+      ),
       backgroundColor: Colors.grey.shade400,
       body: SafeArea(
         child: Padding(
@@ -14,15 +17,10 @@ class QuestionScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Expanded(
-                flex: 5,
-                child: Padding(
-                  padding: const EdgeInsets.all(15.0),
-                  child: Center(
-                    child: Image.network(
-                        "https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg"),
-                  ),
-                ),
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Image.network(
+                    "https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg"),
               ),
             ],
           ),
