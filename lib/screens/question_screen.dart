@@ -9,18 +9,23 @@ class QuestionScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text("せんたくタグ"),
       ),
-      backgroundColor: Colors.grey.shade400,
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
+            children: const [
               Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: Image.network(
-                    "https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg"),
+                padding: EdgeInsets.symmetric(
+                  horizontal: 100.0,
+                  vertical: 15.0,
+                ),
+                child: Image(
+                  image: AssetImage("images/100.gif"),
+                  fit: BoxFit.cover,
+                ),
               ),
             ],
           ),
