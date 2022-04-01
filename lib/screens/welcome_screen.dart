@@ -19,7 +19,7 @@ class WelcomeScreen extends StatelessWidget {
                 onPressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (_) => const QuizPage(),
+                    builder: (_) => const QuestionScreen(),
                   ),
                 ),
                 child: Container(
