@@ -7,11 +7,15 @@ class AnswerButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: MaterialButton(
-        onPressed: () {},
-        child: Text(optionText),
-      ),
+    return Row(
+      children: [
+        Expanded(
+          child: ElevatedButton(
+            onPressed: () {},
+            child: Text(optionText),
+          ),
+        ),
+      ],
     );
   }
 }
