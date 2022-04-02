@@ -13,13 +13,13 @@ class QuestionScreen extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10.0),
+          padding: const EdgeInsets.all(10.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: EdgeInsets.symmetric(vertical: 8.0),
                 child: Text("Q1. この洗濯表示は何か?"),
               ),
               const Padding(
@@ -32,8 +32,10 @@ class QuestionScreen extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
+              const SizedBox(
+                height: 30.0,
+              ),
               Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
                   AnswerButton(
                     optionText: "つけ置き禁止",
