@@ -43,15 +43,19 @@ class QuestionScreen extends ConsumerWidget {
                 children: [
                   AnswerButton(
                     optionText: state.currentQuiz!.options[0],
+                    userAnswers: 0,
                   ),
                   AnswerButton(
                     optionText: state.currentQuiz!.options[1],
+                    userAnswers: 1,
                   ),
                   AnswerButton(
                     optionText: state.currentQuiz!.options[2],
+                    userAnswers: 2,
                   ),
                   AnswerButton(
                     optionText: state.currentQuiz!.options[3],
+                    userAnswers: 3,
                   ),
                 ],
               )
