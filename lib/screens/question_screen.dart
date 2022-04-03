@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:washer_quiz/components/answer_button.dart';
+import 'package:washer_quiz/models/quiz_providers.dart';
 
-class QuestionScreen extends StatelessWidget {
+class QuestionScreen extends ConsumerWidget {
   const QuestionScreen({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final state = ref.watch(quizProvider);
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("せんたくタグ"),
@@ -20,7 +24,7 @@ class QuestionScreen extends StatelessWidget {
             children: [
               const Padding(
                 padding: EdgeInsets.symmetric(vertical: 8.0),
-                child: Text("Q1. この洗濯表示は何か?"),
+                child: Text("Q. この洗濯表示は何か?"),
               ),
               const Padding(
                 padding: EdgeInsets.symmetric(
@@ -36,18 +40,18 @@ class QuestionScreen extends StatelessWidget {
                 height: 30.0,
               ),
               Column(
-                children: const [
+                children: [
                   AnswerButton(
-                    optionText: "つけ置き禁止",
+                    optionText: state.currentQuiz!.options[0],
                   ),
                   AnswerButton(
-                    optionText: "家庭での洗濯禁止",
+                    optionText: state.currentQuiz!.options[1],
                   ),
                   AnswerButton(
-                    optionText: "洗濯禁止",
+                    optionText: state.currentQuiz!.options[2],
                   ),
                   AnswerButton(
-                    optionText: "手洗い禁止",
+                    optionText: state.currentQuiz!.options[3],
                   ),
                 ],
               )
