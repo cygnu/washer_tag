@@ -7,7 +7,7 @@ part 'quiz_state.freezed.dart';
 class QuizState with _$QuizState {
   const QuizState._();
   const factory QuizState({
-    int? quizNumber,
+    required int quizNumber,
     List<int>? quizOrder,
     int? correctCount,
     int? currentQuizResult,

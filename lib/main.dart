@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_context/riverpod_context.dart';
 import 'package:washer_quiz/screens/welcome_screen.dart';
 
 void main() {
   runApp(
     const ProviderScope(
-      child: WasherQuiz(),
+      child: InheritedConsumer(
+        child: WasherQuiz(),
+      ),
     ),
   );
 }

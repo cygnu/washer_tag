@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:riverpod_context/riverpod_context.dart';
 import 'package:washer_quiz/models/quiz_providers.dart';
 
 class AnswerButton extends StatelessWidget {
@@ -17,7 +18,9 @@ class AnswerButton extends StatelessWidget {
       children: [
         Expanded(
           child: ElevatedButton(
-            onPressed: () => context.read(quizProvider).answer(userAnswers),
+            onPressed: () {
+              context.read(quizProvider.notifier).answer(userAnswers, context);
+            },
             child: Text(optionText),
           ),
         ),
