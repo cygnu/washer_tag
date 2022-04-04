@@ -27,7 +27,7 @@ class QuizController extends StateNotifier<QuizState> with LocatorMixin {
   String get quizNumberString => state.quizNumber.toString();
 
   void prepare() {
-    List<int> quizOrder = [0, 1];
+    List<int> quizOrder = [0, 1, 2, 3, 4, 5];
     quizOrder.toList().shuffle();
     state = state.copyWith(
       quizNumber: 1,

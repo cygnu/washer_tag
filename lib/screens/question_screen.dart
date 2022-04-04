@@ -26,13 +26,13 @@ class QuestionScreen extends ConsumerWidget {
                 padding: EdgeInsets.symmetric(vertical: 8.0),
                 child: Text("Q. この洗濯表示は何か?"),
               ),
-              const Padding(
-                padding: EdgeInsets.symmetric(
+              Padding(
+                padding: const EdgeInsets.symmetric(
                   horizontal: 100.0,
                   vertical: 15.0,
                 ),
                 child: Image(
-                  image: AssetImage("images/100.gif"),
+                  image: AssetImage(state.currentQuiz!.image),
                   fit: BoxFit.cover,
                 ),
               ),
