@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:state_notifier/state_notifier.dart';
 import 'package:washer_quiz/quiz.dart';
-import 'package:washer_quiz/screens/welcome_screen.dart';
+import 'package:washer_quiz/screens/score_screen.dart';
 import 'package:washer_quiz/views/quiz_state.dart';
 
 final quizProvider =
@@ -58,8 +58,10 @@ class QuizController extends StateNotifier<QuizState> with LocatorMixin {
       Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => const WelcomeScreen(),
+            builder: (context) => const ScoreScreen(),
           ));
+      // 初期化
+      prepare();
     }
   }
 
