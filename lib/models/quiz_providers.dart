@@ -28,7 +28,7 @@ class QuizController extends StateNotifier<QuizState> with LocatorMixin {
 
   void prepare() {
     List<int> quizOrder = [0, 1, 2, 3, 4, 5];
-    quizOrder.toList().shuffle();
+    quizOrder.shuffle();
     state = state.copyWith(
       quizNumber: 1,
       quizOrder: quizOrder,
@@ -60,8 +60,6 @@ class QuizController extends StateNotifier<QuizState> with LocatorMixin {
           MaterialPageRoute(
             builder: (context) => const ScoreScreen(),
           ));
-      // 初期化
-      prepare();
     }
   }
 

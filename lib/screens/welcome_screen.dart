@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:riverpod_context/riverpod_context.dart';
+import 'package:washer_quiz/models/quiz_providers.dart';
 import 'package:washer_quiz/screens/question_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -21,12 +23,14 @@ class WelcomeScreen extends StatelessWidget {
               Expanded(
                 child: Center(
                   child: ElevatedButton(
-                    onPressed: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (_) => QuestionScreen(),
-                      ),
-                    ),
+                    onPressed: () {
+                      context.read(quizProvider.notifier).prepare();
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => const QuestionScreen(),
+                          ));
+                    },
                     child: const Text(
                       "せんたく表示",
                       style: TextStyle(
