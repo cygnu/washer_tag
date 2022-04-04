@@ -4,7 +4,7 @@ const List<Quiz> quizList = [
   Quiz(
     image: "images/100.gif",
     options: ["つけ置き禁止", "家庭での洗濯禁止", "洗濯禁止", "手洗い禁止"],
-    correctIndex: 2,
+    correctIndex: 1,
   ),
   Quiz(
     image: "images/110.gif",
@@ -14,7 +14,7 @@ const List<Quiz> quizList = [
       "液温は60℃を限度とし、手洗いができる",
       "液温の限度はなく、手洗い可"
     ],
-    correctIndex: 2,
+    correctIndex: 1,
   ),
   Quiz(
     image: "images/130.gif",
@@ -24,7 +24,7 @@ const List<Quiz> quizList = [
       "液温は30 ℃を限度とし、洗濯機で非常に弱い処理が出来る",
       "液温は30 ℃を限度とし、洗濯機で洗濯出来る",
     ],
-    correctIndex: 4,
+    correctIndex: 3,
   ),
   Quiz(
     image: "images/131.gif",
@@ -34,7 +34,7 @@ const List<Quiz> quizList = [
       "液温は30 ℃を限度とし、洗濯機で非常に弱い処理が出来る",
       "液温は30 ℃を限度とし、洗濯機で洗濯出来る",
     ],
-    correctIndex: 1,
+    correctIndex: 0,
   ),
   Quiz(
     image: "images/132.gif",
@@ -44,7 +44,7 @@ const List<Quiz> quizList = [
       "液温は30 ℃を限度とし、洗濯機で弱い処理が出来る",
       "液温は30 ℃を限度とし、洗濯機で非常に弱い処理が出来る",
     ],
-    correctIndex: 4,
+    correctIndex: 3,
   ),
   Quiz(
     image: "images/140.gif",
@@ -54,7 +54,7 @@ const List<Quiz> quizList = [
       "液温は40 ℃を限度とし、洗濯機で弱い処理が出来る",
       "液温は40 ℃を限度とし、洗濯機で非常に弱い処理が出来る",
     ],
-    correctIndex: 2,
+    correctIndex: 1,
   ),
   Quiz(
     image: "images/141.gif",
@@ -64,7 +64,7 @@ const List<Quiz> quizList = [
       "液温は40 ℃を限度とし、洗濯機で弱い処理が出来る",
       "液温は40 ℃を限度とし、洗濯機で非常に弱い処理が出来る",
     ],
-    correctIndex: 3,
+    correctIndex: 2,
   ),
   Quiz(
     image: "images/142.gif",
@@ -74,7 +74,7 @@ const List<Quiz> quizList = [
       "液温は40 ℃を限度とし、洗濯機で弱い処理が出来る",
       "液温は40 ℃を限度とし、洗濯機で非常に弱い処理が出来る",
     ],
-    correctIndex: 4,
+    correctIndex: 3,
   ),
   Quiz(
     image: "images/150.gif",
@@ -84,7 +84,7 @@ const List<Quiz> quizList = [
       "液温は50 ℃を限度とし、洗濯機で弱い処理が出来る",
       "液温は50 ℃を限度とし、洗濯機で非常に弱い処理が出来る",
     ],
-    correctIndex: 2,
+    correctIndex: 1,
   ),
   Quiz(
     image: "images/151.gif",
@@ -94,7 +94,7 @@ const List<Quiz> quizList = [
       "液温は50 ℃を限度とし、洗濯機で弱い処理が出来る",
       "液温は50 ℃を限度とし、洗濯機で非常に弱い処理が出来る",
     ],
-    correctIndex: 3,
+    correctIndex: 2,
   ),
   Quiz(
     image: "images/160.gif",
@@ -104,7 +104,7 @@ const List<Quiz> quizList = [
       "液温は60 ℃を限度とし、洗濯機で弱い処理が出来る",
       "液温は60 ℃を限度とし、洗濯機で非常に弱い処理が出来る",
     ],
-    correctIndex: 2,
+    correctIndex: 1,
   ),
   Quiz(
     image: "images/161.gif",
@@ -114,6 +114,6 @@ const List<Quiz> quizList = [
       "液温は60 ℃を限度とし、洗濯機で弱い処理が出来る",
       "液温は60 ℃を限度とし、洗濯機で非常に弱い処理が出来る",
     ],
-    correctIndex: 3,
+    correctIndex: 2,
   ),
 ];
