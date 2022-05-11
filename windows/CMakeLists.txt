@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(washer_quiz LANGUAGES CXX)
+project(washer_tag LANGUAGES CXX)
 
-set(BINARY_NAME "washer_quiz")
+set(BINARY_NAME "washer_tag")
 
 cmake_policy(SET CMP0063 NEW)
 

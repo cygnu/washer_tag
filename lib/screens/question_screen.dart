@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:washer_quiz/components/answer_button.dart';
-import 'package:washer_quiz/models/quiz_providers.dart';
+import 'package:washer_tag/components/answer_button.dart';
+import 'package:washer_tag/models/quiz_providers.dart';
 
 class QuestionScreen extends ConsumerWidget {
   const QuestionScreen({Key? key}) : super(key: key);

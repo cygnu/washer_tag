@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:washer_quiz/models/quiz_providers.dart';
+import 'package:washer_tag/models/quiz_providers.dart';
 
 class ScoreScreen extends ConsumerWidget {
   const ScoreScreen({Key? key}) : super(key: key);

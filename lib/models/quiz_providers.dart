@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:state_notifier/state_notifier.dart';
-import 'package:washer_quiz/quiz.dart';
-import 'package:washer_quiz/screens/score_screen.dart';
-import 'package:washer_quiz/views/quiz_state.dart';
+import 'package:washer_tag/quiz.dart';
+import 'package:washer_tag/screens/score_screen.dart';
+import 'package:washer_tag/views/quiz_state.dart';
 
 final quizProvider =
     StateNotifierProvider.autoDispose<QuizController, QuizState>((ref) {

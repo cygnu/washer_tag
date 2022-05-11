@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:washer_quiz/models/quiz.dart';
+import 'package:washer_tag/models/quiz.dart';
 
 part 'quiz_state.freezed.dart';
 

@@ -1,4 +1,4 @@
-import 'package:washer_quiz/models/quiz.dart';
+import 'package:washer_tag/models/quiz.dart';
 
 const List<Quiz> quizList = [
   Quiz(

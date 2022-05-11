@@ -1,4 +1,4 @@
-package com.example.washer_quiz
+package com.example.washer_tag
 
 import io.flutter.embedding.android.FlutterActivity
 

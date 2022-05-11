@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.washer_quiz">
+    package="com.cygnu.washer_tag">
    <application
-        android:label="washer_quiz"
+        android:label="washer_tag"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

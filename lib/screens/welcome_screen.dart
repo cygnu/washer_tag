@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:riverpod_context/riverpod_context.dart';
-import 'package:washer_quiz/models/quiz_providers.dart';
-import 'package:washer_quiz/screens/question_screen.dart';
+import 'package:washer_tag/models/quiz_providers.dart';
+import 'package:washer_tag/screens/question_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);

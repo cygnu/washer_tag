@@ -1,6 +1,6 @@
 {
-    "name": "washer_quiz",
-    "short_name": "washer_quiz",
+    "name": "washer_tag",
+    "short_name": "washer_tag",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
